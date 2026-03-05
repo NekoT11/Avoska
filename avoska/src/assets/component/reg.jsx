@@ -53,17 +53,17 @@ export function Reg({ users, setUsers }) {
 
 
     return (
-        <div className="flex flex-col gap-3 w-96">
-            <h1 className="flex items-center justify-center font-medium text-xl">Регистрация</h1>
-            <input type="text" className="bg-gray-200 rounded-xl p-2" placeholder="Введите ФИО" value={regSurname} onChange={(e) => setRegSurname(e.target.value)} />
-            <input type="number" className="bg-gray-200 rounded-xl p-2" placeholder="Введите номер телефона" value={regNumber} onChange={(e) => setRegNumber(e.target.value)} />
-            <input type="email" className="bg-gray-200 rounded-xl p-2" placeholder="Введите email" value={regEmail} onChange={(e) => setRegEmail(e.target.value)} />
-            <input type="text" className="bg-gray-200 rounded-xl p-2" placeholder="Введите логин" value={regLogin} onChange={(e) => setRegLogin(e.target.value)} />
-            <input type="password" className="bg-gray-200 rounded-xl p-2" placeholder="Введите пароль" value={regPass} onChange={(e) => setRegPass(e.target.value)} />
-            <button onClick={() => regis()} className="bg-gray-300 p-2 rounded-xl cursor-pointer mt-3 hover:bg-black hover:text-white">Зарегистрироваться</button>
-            <button className="bg-gray-300 p-2 rounded-xl cursor-pointer mt-3 hover:bg-black hover:text-white">Уже разрегистрированы? Войти</button>
-            {error && <div className="bg-red-300 rounded-xl flex items-center justify-center p-1">{error}</div>}
-            {correct && <div className="bg-green-300 rounded-xl flex items-center justify-center p-2">{correct}</div>}
+        <div className="">
+            <h1 className="">Регистрация</h1>
+            <input type="text" className="" placeholder="Введите ФИО" value={regSurname} onChange={(e) => setRegSurname(e.target.value)} />
+            <input type="number" className="" placeholder="Введите номер телефона" value={regNumber} onChange={(e) => setRegNumber(e.target.value)} />
+            <input type="email" className="" placeholder="Введите email" value={regEmail} onChange={(e) => setRegEmail(e.target.value)} />
+            <input type="text" className="" placeholder="Введите логин" value={regLogin} onChange={(e) => setRegLogin(e.target.value)} />
+            <input type="password" className="" placeholder="Введите пароль" value={regPass} onChange={(e) => setRegPass(e.target.value)} />
+            <button onClick={() => regis()} className="">Зарегистрироваться</button>
+            <button className="">Уже разрегистрированы? Войти</button>
+            {error && <div className="">{error}</div>}
+            {correct && <div className="">{correct}</div>}
         </div>
     )
 }
